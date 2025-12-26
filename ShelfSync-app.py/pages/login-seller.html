@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Login - ShelfSync</title>
+    <link rel="stylesheet" href="../css/shelf-sync-all.css">
+    <script src="../js/shelf-sync-all.js" defer></script>
+</head>
+
+<body class="seller-login">
+    <!-- Simple Navbar -->
+    <nav class="navbar" style="background: rgba(255, 255, 255, 0.95);">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <span>📚 ShelfSync</span>
+            </a>
+            <a href="../index.html" class="btn btn-ghost btn-sm">← Back to Home</a>
+        </div>
+    </nav>
+
+    <!-- Auth Container -->
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <h2>🏪 Seller Portal</h2>
+                <p>Manage your bookstore inventory</p>
+            </div>
+
+            <!-- Role Switcher -->
+            <div class="role-switcher">
+                <a href="login-customer.html">Customer</a>
+                <a href="login-seller.html" class="active">Seller</a>
+                <a href="login-admin.html">Admin</a>
+            </div>
+
+            <!-- Login Form -->
+            <form action="seller-dashboard.html">
+                <div class="form-group">
+                    <label class="form-label">Seller Email</label>
+                    <input type="email" class="form-control" placeholder="seller@bookstore.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Password</label>
+                    <input type="password" class="form-control" placeholder="••••••••" required>
+                </div>
+
+                <div class="flex-between" style="margin-bottom: var(--space-6);">
+                    <label style="display: flex; align-items: center; gap: var(--space-2); cursor: pointer;">
+                        <input type="checkbox">
+                        <span class="text-secondary">Remember me</span>
+                    </label>
+                    <a href="#" style="color: var(--accent-color); font-size: var(--text-sm);">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="btn btn-accent btn-block btn-lg hover-lift">
+                    Access Dashboard
+                </button>
+            </form>
+
+            <div class="form-footer">
+                <p>New seller? <a href="signup.html">Register your store</a></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
